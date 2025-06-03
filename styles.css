@@ -14,7 +14,17 @@
     font-weight: normal;
 }
 
+div > banner {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+}
 
+id.logo {
+    height: 60px;
+    object-fit: cover;
+
+}
 
 body {
     background-image: src="kuvat/tausta.jpg";

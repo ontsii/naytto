@@ -38,7 +38,7 @@
 .container > sidebar {
   grid-area: sidebar;
   display: block;
-  
+
   border: 2px #FCCB00;
   padding: 10px;
   align-self: start;
