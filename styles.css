@@ -14,10 +14,10 @@
     font-weight: normal;
 }
 
-div > banner {
+div.banner img {
     width: 100%;
-    max-height: 180px;
-    object-fit: cover;
+    height: auto;
+    object-fit: fill;
 }
 
 id.logo {
@@ -27,7 +27,7 @@ id.logo {
 }
 
 body {
-    background-image: src="kuvat/tausta.jpg";
+    background-image: url(kuvat/tausta.jpg);
     background-size: cover;
 }
 
@@ -115,4 +115,54 @@ li {
         display: block; 
         margin-bottom: 8px;
     }
+}
+
+.review {
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.review:last-child {
+    border-bottom: none;
+}
+.review-date {
+    font-size: 0.95em;
+    margin-bottom: 4px;
+}
+.review-author {
+    text-align: right;
+    font-size: 1em;
+    margin-top: 8px;
+    font-style: italic;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+.sidebar li {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+.banner section {
+    border: 2px solid #000;
+    background: #fff;
+    padding: 10px;
+}
+.header {
+    border: 2px solid #000;
+    background: #fff;
+}
+.nav {
+    border: 2px solid #000;
+    background: #fff;
+}
+.main {
+    background: #fff;
+}
+.sidebar {
+    background: #fff;
+}
+body {
+    background: #fff;
 }
