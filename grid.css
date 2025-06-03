@@ -11,37 +11,35 @@
   padding: 20px;
 }
 
-.container > header {
+.container > .header {
   grid-area: header;
   display: flex;
   align-items: center;
   padding: 10px;
 }
 
-.container > nav {
+.container > .nav {
   grid-area: nav;
   display: flex;
   gap: 20px;
-  padding: 1em, 3em;
+  padding: 1em 3em;
 }
 
-.container > banner {
+.container > .banner {
   grid-area: banner;
   display: flex;
 }
 
-.container > main {
+.container > .main {
   grid-area: main;
-  padding: 3em, 5em;
+  padding: 3em 5em;
 }
 
-.container > sidebar {
+.container > .sidebar {
   grid-area: sidebar;
   display: block;
-
-  border: 2px #FCCB00;
+  border: 2px solid #FCCB00;
   padding: 10px;
   align-self: start;
+  background: #fffbe6;
 }
-
-
