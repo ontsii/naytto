@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "My Special Font";
+    src: url("fonts/Delius/Delius-Regular.ttf");
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "My Special Font";
+    src: url("fonts/Delius/Delius-Regular.ttf");
+    font-weight: bold;
+  }
+@font-face {
+    font-family: "My new Font";
+    src: url(fonts/simpsonfont/Simpsonfont\ DEMO.otf);
+    font-weight: normal;
+}
+
+
+
+body {
+    background-image: src="kuvat/tausta.jpg";
+    background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "My new Font";
+}
+p {
+    font-family: "My Special Font";
+}
+h1 {
+    font-size: 60px;
+    color: #FCCB00;
+}
+h2 {
+    font-size: 48px;
+    color: #FCCB00;
+}
+h3 {
+    font-size: 32px;
+    color: #FCCB00;
+}
+h4 {
+    font-size: 18px;
+    color: #FCCB00;
+}
+h5, h6 {
+    color: #FCCB00;
+}
+p {
+    color: #000000
+;
+}
+section {
+    border: 2px solid #1769B6;
+    background-color: #b4cce3;
+}
+a {
+    font-family: "My Special Font";
+}
+a:link {
+    color: #E44423
+}
+a:hover {
+    color: #dc988a
+}
+a:visited {
+    color: rgb(128, 128, 128)
+}
+button {
+    background-color: #CDDF8D;
+    color: white
+}
+button:hover {
+    background-color: #92a353;
+}
+li {
+    font-family: "My Special Font";
+    color: #000000;
+}
+
+
+@media (max-width: 640px) {
+    body {
+        margin-left: 16px; 
+        margin-right: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    .nav nav a {
+        display: block; 
+        margin-bottom: 8px;
+    }
+}
