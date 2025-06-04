@@ -6,54 +6,61 @@
         "banner banner banner"
         "content content sidebar";
     max-width: 1000px;
-    margin: 0 auto;
-    gap: 20px;
+    margin: auto;
 }
 
 .header {
     grid-area: header;
-    border-bottom: 2px solid #5C9ED9;
-    padding: 20px;
+    border-bottom: 0px solid #5C9ED9;
+    border: 2px solid #5C9ED9;
     background: #bbd1e4;
+    padding: 0 16px;
     display: flex;           
     align-items: center;     
-    gap: 16px;               
+    gap: 16px;  
+    margin-top: 15px; 
+    margin-bottom: 3px; 
+    border-radius: 15px;           
 }
 
 .nav {
     grid-area: nav;
-    border-bottom: 2px solid #5C9ED9;
-    padding: 20px;
+    border: 2px solid #5C9ED9;
     background: #bbd1e4;
+    padding: 8px 16px;
     display: flex;           
-    align-items: center;     
-    gap: 16px;  
+    align-items: center;      
+    border-radius: 15px;
 }
 
 .banner {
     grid-area: banner;
     padding: 20px;
+    width: auto;
+    display: flex;
 }
 
 .main-content {
     grid-area: content;
     padding: 20px;
     background: #bbd1e4;
-    border-right: 2px solid #5C9ED9;
+    border: 2px solid #5C9ED9;
     min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    border-radius: 15px;
 }
 
 .sidebar {
     grid-area: sidebar;
     background: #5C9ED9;
-    border: 2px solid #5C9ED9;
-    margin: 20px 0 0 0;
+    border: 2px solid #1769B6;
+    margin-left: 10px;
     padding: 16px;
-    height: fit-content;
+    height: max-content;
     align-self: flex-start;
+    border-radius: 15px;
 }
 
 .series-info {
