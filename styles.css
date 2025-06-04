@@ -1,3 +1,9 @@
+.body {
+    background-image: url("kuvat/tausta.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 @font-face {
     font-family: "My Special Font";
     src: url("fonts/Delius/Delius-Regular.ttf");
@@ -14,149 +20,75 @@
     font-weight: normal;
 }
 
-id.logo {
-    height: 60px;
-    object-fit: cover;
-
+/* Base styles using provided color palette */
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+  --yellow: #FCCB00;
+  --orange: #E44423;
+  --blue-light: #5C9ED9;
+  --blue-dark: #1769B6;
+  --green-light: #CDDF8D;
 }
 
 body {
-    background-image: url(kuvat/tausta.jpg);
-    background-size: cover;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--white);
+  color: var(--black);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "My new Font";
+.site-header {
+  background-color: var(--yellow);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-p {
-    font-family: "My Special Font";
+
+.site-header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--black);
 }
-h1 {
-    font-size: 60px;
-    color: #FCCB00;
+
+.main-nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
 }
-h2 {
-    font-size: 48px;
-    color: #FCCB00;
+
+.main-nav a:hover {
+  color: var(--blue-dark);
 }
-h3 {
-    font-size: 32px;
-    color: #FCCB00;
+
+.main-content {
+  padding: 2rem;
 }
-h4 {
-    font-size: 18px;
-    color: #FCCB00;
+
+.site-footer {
+  background-color: var(--blue-dark);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
-h5, h6 {
-    color: #FCCB00;
-}
-p {
-    color: #000000
-;
-}
-section {
-    border: 2px solid #1769B6;
-    background-color: #b4cce3;
-}
-a {
-    font-family: "My Special Font";
-}
-a:link {
-    color: #E44423
-}
-a:hover {
-    color: #dc988a
-}
-a:visited {
-    color: rgb(128, 128, 128)
-}
+
 button {
-    background-color: #CDDF8D;
-    color: white
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
 }
+
 button:hover {
-    background-color: #92a353;
-}
-li {
-    font-family: "My Special Font";
-    color: #000000;
+  background-color: var(--blue-light);
 }
 
 
-@media (max-width: 640px) {
-    body {
-        margin-left: 16px; 
-        margin-right: 16px;
-    }
-
-    h1 {
-        font-size: 32px;
-    }
-
-    h2 {
-        font-size: 26px;
-    }
-
-    h3 {
-        font-size: 22px;
-    }
-
-    h4 {
-        font-size: 18px;
-    }
-
-    .nav nav a {
-        display: block; 
-        margin-bottom: 8px;
-    }
-}
-
-.review {
-    border-bottom: 2px solid #000;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-}
-.review:last-child {
-    border-bottom: none;
-}
-.review-date {
-    font-size: 0.95em;
-    margin-bottom: 4px;
-}
-.review-author {
-    text-align: right;
-    font-size: 1em;
-    margin-top: 8px;
-    font-style: italic;
-}
-.sidebar ul {
-    list-style: none;
-    padding: 10px;
-    margin: 0;
-}
-.sidebar li {
-    margin-bottom: 8px;
-    font-size: 1.1em;
-}
-.banner section {
-    border: 2px solid #000;
-    background: #fff;
-    padding: 10px;
-}
-.header {
-    border: 2px solid #000;
-    background: #fff;
-}
-.nav {
-    border: 2px solid #000;
-    background: #fff;
-}
-.main {
-    background: #fff;
-}
-.sidebar {
-    background: #fff;
-}
-body {
-    background: #fff;
-}
