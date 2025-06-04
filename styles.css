@@ -1,94 +1,96 @@
-.body {
-    background-image: url("kuvat/tausta.jpg");
-    background-attachment: fixed;
-    background-size: cover;
+@font-face {
+    font-family: 'CustomFont';
+    src: url(fonts/Delius/Delius-Regular.ttf);
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: "My Special Font";
-    src: url("fonts/Delius/Delius-Regular.ttf");
-    font-weight: normal;
-  }
-  @font-face {
-    font-family: "My Special Font";
-    src: url("fonts/Delius/Delius-Regular.ttf");
+    font-family: 'CustomFontBold';
+    src: url(fonts/Delius/Delius-Bold.ttf);
     font-weight: bold;
-  }
+}
+
 @font-face {
-    font-family: "My new Font";
+    font-family: 'titles';
     src: url(fonts/simpsonfont/Simpsonfont\ DEMO.otf);
     font-weight: normal;
 }
 
-/* Base styles using provided color palette */
-:root {
-  --black: #000000;
-  --white: #FFFFFF;
-  --yellow: #FCCB00;
-  --orange: #E44423;
-  --blue-light: #5C9ED9;
-  --blue-dark: #1769B6;
-  --green-light: #CDDF8D;
-}
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: var(--white);
-  color: var(--black);
+  background: url('kuvat/simpsons_background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 64px;
 }
 
-.site-header {
-  background-color: var(--yellow);
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'titles';
+  color: #FCCB00;
 }
-
-.site-header .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--black);
+p {
+  font-family: 'CustomFont';
+  color:black
 }
-
-.main-nav a {
-  margin-left: 1rem;
-  text-decoration: none;
-  color: var(--black);
-  font-weight: bold;
+h1 {
+    font-size:60px;
 }
-
-.main-nav a:hover {
-  color: var(--blue-dark);
+h2 {
+    font-size:48px;
 }
-
-.main-content {
-  padding: 2rem;
+h3 {
+    font-size:32px;
 }
-
-.site-footer {
-  background-color: var(--blue-dark);
-  color: var(--white);
-  text-align: center;
-  padding: 1rem;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+h4 {
+    font-size:18px;
 }
-
+section {
+    border: 2px solid #1769B6;
+    background-color: #E0F7FA;
+}
+a:link {
+    font-family: 'CustomFont';
+    color: #E44423;
+}
+a:hover {
+    color: #edb9b4;
+}
+a:visited {
+    color: #605b5a;
+}
 button {
-  background-color: var(--orange);
-  color: var(--white);
-  border: none;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 5px;
+    background-color: #E44423;
+    color: white;
 }
-
 button:hover {
-  background-color: var(--blue-light);
+    background-color: #7a3b2c;
 }
+li {
+    font-family: 'CustomFont';
+}
+@media (max-width: 640px) {
+    body {
+        margin-left: 16px; 
+        margin-right: 16px;
+    }
 
+    h1 {
+        font-size: 32px;
+    }
 
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    .nav nav a {
+        display: block; 
+        margin-bottom: 8px;
+    }
+}
