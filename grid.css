@@ -24,18 +24,17 @@
 }
 
 .nav {
-    grid-area: nav;
-    border: 2px solid #5C9ED9;
-    background: #bbd1e4;
-    padding: 8px 16px;
-    display: flex;           
-    align-items: center;      
-    border-radius: 15px;
+  grid-area: nav;
+  display: flex;
+  gap: 2rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #5C9ED9;
+  border-radius: 15px;
+  background-color: #bbd1e4;
 }
 
 .banner {
     grid-area: banner;
-    padding: 20px;
     width: auto;
     display: flex;
 }
