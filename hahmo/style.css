@@ -1,3 +1,106 @@
+body {
+  background: url('../kuvat/tausta.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  min-height: 100vh;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/Delius/Delius-Regular.ttf');
+    font-weight: normal;
+
+}
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/Delius/Delius-Bold.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'titles';
+    src: url('../fonts/simpsonfont/Simpsonfont\ DEMO.otf');
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'titles';
+  color: #FCCB00;
+  margin: 0;
+}
+p {
+  font-family: 'CustomFont';
+  color: black;
+}
+h1 {
+    font-size:60px;
+}
+h2 {
+    font-size:48px;
+}
+h3 {
+    font-size:32px;
+}
+h4 {
+    font-size:18px;
+}
+section {
+    border: none;
+    background: none;
+    padding: 0;
+}
+a:link {
+    font-family: 'CustomFont';
+    color: #E44423;
+}
+a:hover {
+    color: #edb9b4;
+}
+a:visited {
+    color: #605b5a;
+}
+li {
+    font-family: 'CustomFont';
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.logo-img {
+    height: 48px;
+    margin-right: 16px;
+}
+.banner-img {
+    width: 100%;
+    max-height: 160px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+.main-nav {
+    display: flex;
+    gap: 32px;
+    padding: 8px 0;
+}
+.main-nav a {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #222;
+}
+.main-nav a strong {
+    font-weight: bold;
+}
+@media (max-width: 640px) {
+    h1 { font-size: 32px; }
+    h2 { font-size: 26px; }
+    h3 { font-size: 22px; }
+    h4 { font-size: 18px; }
+    .main-nav { flex-direction: column; gap: 8px; }
+}
+
 .characters-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -35,3 +138,54 @@
     font-size: 0.95em;
     color: #333;
 }
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "banner banner banner"
+        "content content sidebar";
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header {
+    grid-area: header;
+    border-bottom: 0px solid #5C9ED9;
+    border: 2px solid #5C9ED9;
+    background: #bbd1e4;
+    padding: 0 16px;
+    display: flex;           
+    align-items: center;     
+    gap: 16px;  
+    margin-top: 15px; 
+    margin-bottom: 3px; 
+    border-radius: 15px;           
+}
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  gap: 2rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #5C9ED9;
+  border-radius: 15px;
+  background-color: #bbd1e4;
+}
+
+.banner {
+    grid-area: banner;
+    width: auto;
+    display: flex;
+}
+
+.tabs { display: flex; margin-bottom: 1em; }
+        .tab-btn { padding: 10px 20px; cursor: pointer; border: none; background: #eee; }
+        .tab-btn.active { background: #ffd90f; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .memes-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+        .memes-grid img { width: 120px; cursor: pointer; border: 2px solid #ffd90f; }
+        .modal { display: none; position: fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; }
+        .modal img { max-width:80vw; max-height:80vh; }

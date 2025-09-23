@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Apu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="logo-img" src="../kuvat/The_Simpsons_yellow_logo.svg.png" alt="Simpsons logo">
+            <h1 class="site-title">The Simpsons Page</h1>
+        </div>
+
+        <div class="nav">
+            <nav>
+                <a href="../index.html">Main Page</a>
+                <a href="../springfield/">Springfield</a>
+                <a href="../keskustelu/index.html">Forum</a>
+            </nav>
+        </div>
+
+        <div class="banner">
+            <img class="banner-img" src="../kuvat/The Simpsons.jpg">
+        </div>
+
+        <div class="main-content">
+            <h1>Apun</h1>
+            <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('info')">Info</button>
+            <button class="tab-btn" onclick="showTab('memes')">Memes</button>
+        </div>
+        <div id="info" class="tab-content active">
+            <h2>Name</h2>
+            <p>Apu Nahasapeemapetilon</p>
+            <h2>Description</h2>
+            <p>Apu Nahasapeemapetilon, Jr. is the operator of the Kwik-E-Mart. He is a recurring character in The Simpsons. He is an immigrant from India, and as such, speaks with a strong Indian accent. Accounts disagree as to whether he is a college dropout or if he has a PhD.</p>
+            <h2>Voice Actor</h2>
+            <img src="../kuvat/hahmot/MV5BMTQ0MzIxMzUwMV5BMl5BanBnXkFtZTcwMjE1NjM1Mg@@._V1_FMjpg_UX1000_.jpg" alt="Hank Azaria" style="width:120px;">
+            <p>
+                Hank Azaria<br>
+                <a href="https://www.imdb.com/name/nm0000279/" target="_blank">IMDB</a>
+            </p>
+            <h2>Voiceclips</h2>
+            <audio controls src="../aani/please_come_again.wav"></audio>
+            <audio controls src="../aani/insane.wav"></audio>
+            <audio controls src="../aani/hell.wav"></audio>
+        </div>
+        <div id="memes" class="tab-content">
+            <h2>Memes</h2>
+            <div class="memes-grid">
+                <img src="../kuvat/meemit/come.jpg" alt="Thank you come again" onclick="openModal(this.src)">
+                <img src="../kuvat/meemit/good.jpg" alt="I don't feel so good" onclick="openModal(this.src)">
+            </div>
+        </div>
+        <div id="modal" class="modal" onclick="closeModal()">
+            <img id="modal-img" src="" alt="Meme">
+        </div>
+    </div>
+
+</body>
+</html>

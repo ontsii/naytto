@@ -1,4 +1,3 @@
-// Esimerkkiviestit
 const messages = [
   {
     sender: "LisaFan123",
@@ -8,7 +7,6 @@ const messages = [
   }
 ];
 
-// Lisää uusi viesti
 function addMessage(formData) {
   const date = new Date().toISOString().split("T")[0];
   const message = {
@@ -21,7 +19,6 @@ function addMessage(formData) {
   renderMessages();
 }
 
-// Tulostetaan viestit
 function renderMessages() {
   const container = document.getElementById("message-list");
   container.innerHTML = "";
