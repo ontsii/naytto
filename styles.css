@@ -100,3 +100,8 @@ li {
     h4 { font-size: 18px; }
     .main-nav { flex-direction: column; gap: 8px; }
 }
+.message { background: #fffbe6; margin: 16px 0; padding: 16px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.07);}
+.dialog-bg { display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.3); justify-content:center; align-items:center;}
+.dialog { background:#fff; padding:24px; border-radius:16px; min-width:300px; }
+.dialog input, .dialog textarea { width:100%; margin-bottom:12px; }
+.dialog-buttons { display:flex; gap:12px; }

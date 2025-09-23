@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Forum</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../grid.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <h1>Forum</h1>
+    <button id="newMsgBtn">Write message</button>
+    <div id="messages"></div>
+
+    <div class="dialog-bg" id="dialogBg">
+        <div class="dialog">
+            <h2>New Message</h2>
+            <input type="text" id="sender" placeholder="Sender's Name">
+            <input type="text" id="title" placeholder="Title">
+            <textarea id="content" placeholder="Message Content"></textarea>
+            <div class="dialog-buttons">
+                <button id="sendBtn">Send</button>
+                <button id="cancelBtn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

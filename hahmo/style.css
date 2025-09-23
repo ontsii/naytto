@@ -5,6 +5,13 @@ body {
   min-height: 100vh;
 }
 
+.main-content {
+    background: rgba(255, 255, 200, 0.85); 
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
 @font-face {
     font-family: 'CustomFont';
     src: url('../fonts/Delius/Delius-Regular.ttf');
@@ -189,3 +196,114 @@ li {
         .memes-grid img { width: 120px; cursor: pointer; border: 2px solid #ffd90f; }
         .modal { display: none; position: fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; }
         .modal img { max-width:80vw; max-height:80vh; }
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "banner banner banner"
+        "content content sidebar";
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header {
+    grid-area: header;
+    border-bottom: 0px solid #5C9ED9;
+    border: 2px solid #5C9ED9;
+    background: #bbd1e4;
+    padding: 0 16px;
+    display: flex;           
+    align-items: center;     
+    gap: 16px;  
+    margin-top: 15px; 
+    margin-bottom: 3px; 
+    border-radius: 15px;           
+}
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  gap: 2rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #5C9ED9;
+  border-radius: 15px;
+  background-color: #bbd1e4;
+}
+
+.banner {
+    grid-area: banner;
+    width: auto;
+    display: flex;
+}
+
+.main-content {
+    grid-area: content;
+    padding: 20px;
+    background: #bbd1e4;
+    border: 2px solid #5C9ED9;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 15px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: #5C9ED9;
+    border: 2px solid #1769B6;
+    margin-left: 10px;
+    padding: 16px;
+    height: max-content;
+    align-self: flex-start;
+    border-radius: 15px;
+}
+
+.series-info {
+    margin: 20px 0 20px 0;
+    padding: 0 16px;
+}
+
+.reviews {
+    padding: 0 16px 16px 16px;
+}
+
+.review {
+    border-bottom: 2px solid #5C9ED9;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.review:last-child {
+    border-bottom: none;
+}
+.review-date {
+    font-size: 1em;
+    margin-bottom: 4px;
+    font-family: 'CustomFont';
+}
+.review-author {
+    text-align: right;
+    font-size: 1em;
+    margin-top: 8px;
+    font-style: italic;
+    font-family: 'CustomFont';
+}
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-areas: 
+            "header"
+            "nav"
+            "banner"
+            "content"
+            "sidebar";
+        grid-template-columns: 1fr;
+        max-width: 98vw;
+    }
+    .main-content, .sidebar {
+        border-right: none;
+        margin: 0;
+    }
+}
